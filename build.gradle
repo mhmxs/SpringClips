@@ -1,0 +1,120 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-release" }
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.4.RELEASE")
+	classpath("org.springframework:springloaded:1.2.0.RELEASE")
+        classpath("com.eriwen:gradle-js-plugin:1.12.1")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'pmd'
+apply plugin: 'war'
+apply plugin: "com.eriwen.gradle.js"
+
+mainClassName = "com.github.yasbc.Application"
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-release" }
+}
+
+configurations {
+    providedRuntime
+}
+
+dependencies {
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+
+    compile('org.apache.derby:derby:10.10.2.0')
+    compile('javax.persistence:persistence-api:1.0.2')
+    compile('org.eclipse.persistence:org.eclipse.persistence.core:2.5.2')
+    compile('org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.2')
+
+    testCompile("junit:junit")
+    testCompile('org.easymock:easymock:3.2')
+}
+
+jar {
+    baseName = 'yasbc'
+    version = '0.0.1'
+}
+
+war {
+    baseName = 'yasbc'
+    version =  '0.0.1'
+    from('public') { include '**/**' }
+}
+
+javascript.source {
+    custom {
+        js {
+            srcDir 'public/scripts'
+            include '**/*.js'
+        }
+    }
+}
+
+jshint {
+    tasks.jshint.source = javascript.source.custom.js.files
+    tasks.jshint.dest = file("$buildDir/reports/jshint/report.txt")
+    jshint.predef = [window: true]
+    jshint.options = [
+            forin: true,
+            bitwise: true,
+            browser: true,
+            eqeqeq: true,
+            camelcase: true,
+            curly: true,
+            eqeqeq: true,
+            esnext: true,
+            expr: true,
+            immed: true,
+            latedef: true,
+            newcap: true,
+            noarg: true,
+            node: true,
+            noempty: true,
+            nonstandard: true,
+            quotmark: "single",
+            regexp: true,
+            smarttabs: true,
+            strict: true,
+            trailing: true,
+            undef: true,
+            devel: true,
+            globalstrict: true
+    ]
+}
+
+idea {
+    module {
+        inheritOutputDirs = false
+        outputDir = file("$buildDir/classes/main/")
+    }
+}
+
+pmd {
+    ignoreFailures = false
+    toolVersion = '5.1.3'
+    sourceSets = [sourceSets.main]
+    reportsDir = file("$buildDir/reports/pmd")
+    targetJdk = 1.7
+    ruleSetFiles = files(["pmd.xml"])
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}

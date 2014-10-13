@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Oct 13 18:26:38 CEST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0149-0a55-3ad2-0000048f4f30 
+on database directory /home/richard/Development/yasbc/build/derby with class loader sun.misc.Launcher$AppClassLoader@4aa0560e 
+Loaded from file:/home/richard/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.10.2.0/47eba6736561c377f2132f5e09e2fe8084d899a9/derby-10.10.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_67-b01
+user.dir=/home/richard/Development/yasbc
+os.name=Linux
+os.arch=amd64
+os.version=3.11.10-21-desktop
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

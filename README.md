@@ -14,7 +14,6 @@ Basic Spring Boot configuration with somw extras:
 [Spring]
 - Full UTF-8 support
 - Multipart accepted sizes
-- Audit logging
 - Environment based application configuration (-Denv.name=test)
 - Thymeleaf template engine
 - Standalone and auto-register at Webcontext are supported too
@@ -22,3 +21,6 @@ Basic Spring Boot configuration with somw extras:
 [Eclipselink]
 - Embedded Derby database
 - Custom enum converters (see com.github.yasbc.domains.TestDomain)
+
+[Logging]
+- Custom Audit logging with com.github.yasbc.utils.Auditor

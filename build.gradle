@@ -44,7 +44,6 @@ dependencies {
     compile('org.eclipse.persistence:org.eclipse.persistence.jpa:2.5.2')
 
     testCompile("junit:junit")
-    testCompile('org.easymock:easymock:3.2')
 }
 
 jar {

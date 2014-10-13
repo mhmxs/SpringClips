@@ -1,9 +1,9 @@
 YASPC
 =================================
 
-Yet Another Spring Boot Configuration
+=== Yet Another Spring Boot Configuration ===
 
-Basic Spring Boot configuration with somw extras:
+Basic Spring Boot configuration with some extras:
 
 [Gradle]
 - Wrapper support

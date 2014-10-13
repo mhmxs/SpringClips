@@ -6,8 +6,9 @@ Yet Another Spring Boot Configuration
 Basic Spring Boot configuration with somw extras:
 
 [Gradle]
-- Wrapper build for jar and war bundles too
-- Integrated PMD and JSHint static code analyzing (./gradlew jshint pmdMain)
+- Wrapper support
+- Build for jar and war bundles too (.gradlew jar war)
+- Integrated PMD and JSHint for static code analyzing (./gradlew jshint pmdMain)
 - IntelliJ IDEA integration (./gradlew idea)
 
 [Spring]

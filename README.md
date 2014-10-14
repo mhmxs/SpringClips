@@ -1,7 +1,7 @@
-YASPC
+SpringClips
 =================================
 
---- Yet Another Spring Boot Configuration ---
+Yet another Spring Boot configuration integrated with EclipseLink
 
 Basic Spring Boot configuration with some extras:
 

@@ -47,12 +47,12 @@ dependencies {
 }
 
 jar {
-    baseName = 'yasbc'
+    baseName = 'SpringClips'
     version = '0.0.1'
 }
 
 war {
-    baseName = 'yasbc'
+    baseName = 'SpringClips'
     version =  '0.0.1'
     from('public') { include '**/**' }
 }

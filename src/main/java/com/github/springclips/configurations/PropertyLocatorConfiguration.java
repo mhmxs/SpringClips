@@ -1,4 +1,4 @@
-package com.github.yasbc.configurations;
+package com.github.springclips.configurations;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

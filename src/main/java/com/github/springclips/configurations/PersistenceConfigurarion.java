@@ -1,4 +1,4 @@
-package com.github.yasbc.configurations;
+package com.github.springclips.configurations;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import javax.persistence.Persistence;
 @Configuration
 public class PersistenceConfigurarion {
 
-    @Value("${persistence.unit.name:yasbc-dev-pu}")
+    @Value("${persistence.unit.name:springclips-dev-pu}")
     private String unitName;
 
     @Bean

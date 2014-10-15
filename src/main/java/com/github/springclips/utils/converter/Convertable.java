@@ -1,4 +1,4 @@
-package com.github.yasbc.utils.converter;
+package com.github.springclips.utils.converter;
 
 public interface Convertable<E> {
     Object convert();

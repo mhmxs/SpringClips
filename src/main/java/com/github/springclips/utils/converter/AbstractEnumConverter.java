@@ -1,4 +1,4 @@
-package com.github.yasbc.utils.converter;
+package com.github.springclips.utils.converter;
 
 import org.eclipse.persistence.mappings.DatabaseMapping;
 import org.eclipse.persistence.mappings.converters.Converter;

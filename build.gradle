@@ -20,7 +20,7 @@ apply plugin: 'pmd'
 apply plugin: 'war'
 apply plugin: "com.eriwen.gradle.js"
 
-mainClassName = "com.github.yasbc.Application"
+mainClassName = "com.github.springclips.Application"
 
 repositories {
     mavenLocal()

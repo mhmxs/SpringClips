@@ -1,6 +1,6 @@
-package com.github.yasbc.utils.converter;
+package com.github.springclips.utils.converter;
 
-import com.github.yasbc.domains.TestDomain;
+import com.github.springclips.domains.TestDomain;
 
 public class TestConverter extends AbstractEnumConverter {
     @Override

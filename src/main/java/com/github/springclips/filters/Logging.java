@@ -1,6 +1,6 @@
-package com.github.yasbc.filters;
+package com.github.springclips.filters;
 
-import com.github.yasbc.utils.Auditor;
+import com.github.springclips.utils.Auditor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;

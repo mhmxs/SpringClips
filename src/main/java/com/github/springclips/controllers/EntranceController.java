@@ -1,6 +1,6 @@
-package com.github.yasbc.controllers;
+package com.github.springclips.controllers;
 
-import com.github.yasbc.utils.Auditor;
+import com.github.springclips.utils.Auditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

@@ -1,4 +1,4 @@
-package com.github.yasbc.configurations;
+package com.github.springclips.configurations;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 import org.springframework.beans.factory.annotation.Autowired;

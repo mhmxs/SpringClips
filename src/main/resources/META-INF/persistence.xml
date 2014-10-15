@@ -6,7 +6,7 @@
  http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
     <persistence-unit name="yasbc-dev-pu" transaction-type="RESOURCE_LOCAL">
-        <class>com.github.yasbc.domains.TestDomain</class>
+        <class>com.github.springclips.domains.TestDomain</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:derby:build/derby;create=true" />

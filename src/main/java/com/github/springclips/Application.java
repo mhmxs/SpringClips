@@ -1,4 +1,4 @@
-package com.github.yasbc;
+package com.github.springclips;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

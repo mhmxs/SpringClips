@@ -1,6 +1,6 @@
-package com.github.yasbc.configurations;
+package com.github.springclips.configurations;
 
-import com.github.yasbc.filters.Logging;
+import com.github.springclips.filters.Logging;
 import org.apache.catalina.filters.SetCharacterEncodingFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

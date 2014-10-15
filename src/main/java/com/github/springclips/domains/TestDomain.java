@@ -1,7 +1,7 @@
-package com.github.yasbc.domains;
+package com.github.springclips.domains;
 
-import com.github.yasbc.utils.converter.Convertable;
-import com.github.yasbc.utils.converter.TestConverter;
+import com.github.springclips.utils.converter.Convertable;
+import com.github.springclips.utils.converter.TestConverter;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

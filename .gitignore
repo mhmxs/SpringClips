@@ -1,0 +1,9 @@
+.gradle
+build/
+gradle-app.setting
+
+derby.log
+
+*.iml
+*.ipr
+*.iws

@@ -20,7 +20,7 @@ Basic Spring Boot configuration with some extras:
 
 [Eclipselink]
 - Embedded Derby database
-- Custom enum converters (see com.github.yasbc.domains.TestDomain)
+- Custom enum converters (see com.github.springclipse.domains.TestDomain)
 
 [Logging]
-- Custom Audit logging with com.github.yasbc.utils.Auditor
+- Custom Audit logging with com.github.springclipse.utils.Auditor

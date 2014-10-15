@@ -9,7 +9,7 @@ public final class Auditor {
     private static ThreadLocal<List<String>> entries = new ThreadLocal<List<String>>() {
         @Override
         protected List<String> initialValue() {
-            return new ArrayList<>();
+            return new ArrayList<String>();
         }
     };
 

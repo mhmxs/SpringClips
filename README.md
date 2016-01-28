@@ -17,6 +17,7 @@ Basic Spring Boot configuration with some extras:
 - Environment based application configuration (-Denv.name=test)
 - Thymeleaf template engine
 - Standalone and auto-register at Webcontext are supported too
+- Data repository support
 
 [Eclipselink]
 - Embedded Derby database
